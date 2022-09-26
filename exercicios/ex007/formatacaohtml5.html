@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+</head>
+<body>
+    <h1>
+        Exemplo de códigos em Python:
+    </h1>
+    <Pre><code>
+        def maiusculas(string):
+    '''Recebe uma frase como parâmetro e devolve uma string com as
+    letras maiúsculas que existem nesta frase, na ordem em que elas aparecem.'''
+    palavra = ""
+    
+    tamanho = len(string)
+    for i in range(tamanho):
+        if 65 <= ord(string[i]) and ord(string[i]) <= 90: # Letras maiúsculas
+            palavra += string[i]
+
+    return palavra
+    </code></Pre>
+    <p></p>
+    <h1>Citações:</h1>
+    <h5>
+        Uma citação é um trecho de texto, escrito
+        ou dito por outra pessoa, que vai ilustrar perfeitamente algo que
+        você quer explicar.
+        Normalmente, uma citação aparece entre aspas ou com as
+        margens deslocadas em relação ao texto.
+        Para criar uma citação em HTML, podemos usar a tag &lt;q&gt; (do Inglês quote, que
+            significa citar). O texto que estiver entre &lt;q&gt; e &lt;/q&gt; já vai receber automaticamente
+            as aspas, mas não terá nenhum deslocamento. Essa técnica é mais usada quando
+            queremos uma citação no meio de um parágrafo, por exemplo:
+            <p>
+            <q>
+                Citação sem deslocamento!
+            </q>
+            </p>
+            Também podemos criar citações mais longas (em bloco) e que tenham um parágrafo só para si. Nesse caso, colocaremos tudo dentro de &lt;blockquote&gt; e &lt;/blockquote&gt; e o texto ganha um recuo automaticamente. Podemos também colocar um link para o
+            texto original, usando o parâmetro cite dentro da tag.
+            <blockquote cite="http://developer.mozilla.org">
+                <p>Esta é uma citação tirada da
+                Mozilla Developer Center.</p>
+              </blockquote>
+    <h1>Abreviações:</h1>
+    <p></p>
+    <h5>
+        <p>
+            Essa é uma novidade da HTML5 e que ajuda muito em áreas como a de Tecnologia,que usa muitas siglas e abreviações. Sempre que você quiser escrever uma sigla, mas deixar claro ao usuário (e aos mecanismos de busca) o significado dela, use a tag
+            &lt;abbr&gt;.
+        </p>
+        <p>
+            Eu estou estudando <abbr title="Hypper Text Markup Language">HTML</abbr> 
+            para criar sites
+        </p>
+    </h5>
+</body>
+</html>

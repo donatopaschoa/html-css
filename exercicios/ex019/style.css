@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*
+    Em HTML: id --> <h1 id="principal">
+    Em CSS: #   --> h1#principal {...}, por questão de documentação "h1#principal" = "#principal"
+
+    Em HTML: class
+    Em CSS: .
+
+    - id c/ o mesmo nome pode ser utilizado somente uma única vez numa página - (W3C) porém, tecnicamente é possível adicionar mais id na pag.
+    - id c/ nomes diferentes pode ser utilizado várias vezes na mesma pág.
+    - class c/ mesmo nome pode ser usado várias vezes na mesma pág. pág.
+
+*/
+
+body {
+    background-color: rgb(161, 221, 161);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(2, 92, 2);
+}
+h1#principal {
+    text-align: center;
+    background-color: rgb(2, 92, 2);
+    color: white;
+}
+
+h2 {
+    color: rgba(3, 58, 3, 0.685);
+}
+
+.basico {
+    color: rgb(235, 13, 5);
+}
+
+.intermediario {
+    color: rgb(133, 7, 2);
+}
+
+.avancado {
+    color: rgb(49, 2, 1);
+}
+
+.destaque {
+    background-color: yellow;
+}
