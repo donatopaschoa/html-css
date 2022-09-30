@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo estático sem alterar a imagem</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
+                        
+            /*
             height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: repeat-y; >> c/ texto longo não há necessidade desta linha mas é bom deixar por precaução 
             background-size: cover;
+            background-attachment: fixed;
+            */
+            
+            
+            /* Usando Shorthand: background: color > image > position > repeat > [size] > attachment; */
+            background: black url(imagens/wallpaper002.jpg) center center repeat-y fixed;
+            background-size: cover; /* se tentar incluir "cover" no Shorthand acima, gera erro */
+            
         }
 
         main {
