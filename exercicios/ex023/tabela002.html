@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         th, td {
@@ -21,8 +22,15 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px; /* deslocar 1 px para cima, caso contrário, mostrará a cor do fundo da tabela */
+            background-color: #383838; 
+            /* Necessário manter a cor de fundo, caso contrário, somente o texto será mantido */
         }
 
         caption {
@@ -31,6 +39,10 @@
             padding: 10px;
             background-color: lightgray;
             border: 1px solid black;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
         }
 
         td.num {
