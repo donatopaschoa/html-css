@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes Iframe</title>
+    <style>
+        iframe.conf_iframe {
+            width: 300px;
+            height: 300px;
+            border: 2px solid blue;
+            border-radius: 15px;
+            box-shadow: 3px 3px 6px black;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <iframe src="http://www.estudonauta.com" frameborder="0" width="300" height="300" scrolling="" >
+            [Seu navegador não suporta iFrames]
+        </iframe>
+
+        Conteúdo estático:
+        <iframe srcdoc="<h2> Teste de título </h2> <p> Este documento foi gerado dinamicamente </p>" frameborder="0" width="300 " height="300" scrolling="">
+            [Seu navegador não suporta iFrames]
+        </iframe>
+
+        <iframe class="conf_iframe" srcdoc="<h2>Este iframe foi configurado via CSS</h2>">
+            [Seu navegador não suporta iFrames]
+        </iframe>
+    </p>
+
+
+    <p>Acesse o google clicando
+        <iframe src="http://www.google.com" frameborder="0">
+            <a href="http://www.google.com.br" target="_blank"> aqui</a>
+        </iframe>
+    </p>
+
+
+
+</body>
+</html>
