@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+-----------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Descktop: de 992px até 1200px
+Grandes telas: acima de 1200px */
+
+@media screen and (min-width: 768px) { 
+    /* Se tiver no mínimo 768px: tablet, PC, TV ... todas outras exceto cel, ou seja, acima de 768px */
+    
+    span#icone-burguer {
+        display: none; /* esconde o menu hamburguer */
+    }
+
+    menu {
+        display: block; /* mostra todo os links dentro do menu: opção1, opção2, ..., opção5 */
+    }
+
+    menu > ul >li {
+        display: inline-block; /* apresenta todos os links opção1, opção2, ... na horiz. */
+    }
+
+    main {
+        width: 768px;
+    }
+}
