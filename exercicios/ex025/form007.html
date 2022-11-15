@@ -6,7 +6,7 @@
     <title>Formulário</title>
 </head>
 <body>
-    <form action="cadastro.php" method="post" autocomplete="on">
+    <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="iestado">Estado:</label><br>
             <select name="estado" id="iestado">
@@ -26,7 +26,7 @@
 
         <p>
             <label for="iprof">Profissão:</label><br>
-            <input type="text" name="prof" list="lstprof" id="iprof" placeholder="Descreva sua prof. ou escolha abaixo:" size="32">
+            <input type="text" name="prof" list="lstprof" id="iprof" placeholder="Descreva sua prof (40 dígitos). ou escolha abaixo:" size="41" maxlength="40" minlength="5" required>
             <datalist id="lstprof">
                 <option>Administrador</option>
                 <option>Desenvolvedor</option>
